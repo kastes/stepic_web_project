@@ -1,6 +1,8 @@
+#!/usr/bin/python3
+#!-*-coding:utf8-*-
 def hellowsgiapp(environ, start_response):
     qs = environ.get('QUERY_STRING', None)
-    response = ''
+    response = b''
 
     if qs:
         for l in qs.split('&'):
